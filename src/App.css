@@ -4,7 +4,7 @@
   font-family: Arial, sans-serif;
 }
 
-button {
+button { /* ✅ 'b' is here now */
   padding: 12px 24px;
   font-size: 18px;
   background: #4f46e5;
@@ -12,9 +12,23 @@ button {
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  transition: 0.2s;
 }
 
-button:hover { background: #3730a3; }
+button:hover { 
+  background: #3730a3; 
+  transform: scale(1.05);
+}
 
-.result { font-size: 48px; color: #16a34a; margin-top: 20px; }
-.placeholder { font-size: 18px; color: gray; margin-top: 20px; }
+.result { 
+  font-size: 48px; 
+  color: #16a34a; 
+  margin-top: 20px; 
+  font-weight: bold;
+}
+
+.placeholder { 
+  font-size: 18px; 
+  color: gray; 
+  margin-top: 20px; 
+}
